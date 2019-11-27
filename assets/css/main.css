@@ -1,0 +1,1175 @@
+/* ------------------------------------------------------------------*/
+/* Definitions ------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    color: #212121;
+}
+
+.separator {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------------*/
+/* HEADER -----------------------------------------------------------*/
+.contentHeader {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    height: 70px;
+    z-index: 500;
+    background: rgba(250,250,250,.0);    
+}
+
+.contentHeader * {
+    transition: all .6s;
+}
+
+
+
+.logoProject {
+    margin: 12px 30px 0;
+    font-size: 20px;
+    color: #13355A;
+    width: 305px;
+    float: left;
+    display: none;
+}
+
+    .logoProject * {
+        font-size: 22px;
+    }
+
+    .logoProject p {
+        font-size: 22px;
+        padding: 3%;
+        text-align: center;
+        float: left;
+        border-radius: 0;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        border: 1px solid #FFF;
+    }
+
+        .logoProject p:first-child {
+            color: #FFF;
+            box-sizing: content-box;
+            user-select: none;
+        }
+
+
+/* ------------------------------------------------------------------*/
+/* Menu -------------------------------------------------------------*/
+.topnav {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin: 12px 0 0;
+    width: 75%;
+    max-width: 495px;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+    .topnav li {
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin: 0 7px 0;
+        font-size: 16px;
+    }
+
+        .topnav li a {
+            font-weight: bold;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+    .topnav a {
+        float: left;
+        text-align: center;
+        padding: 0px 5px;
+        text-decoration: none;
+        font-size: 17px;
+        color: rgba(255,255,255,1);
+    }
+
+        .topnav a:hover {
+            color: #FF5500;
+            text-decoration: none;
+        }
+
+    .topnav .icon {
+        display: none;
+        color: #FFF;
+    }
+
+    .topnav .highlight{
+        margin:-7px 0 0;
+        border:2px solid #ffffff;
+        border-radius: 6px;
+        padding: 8px;
+    }
+/* ------------------------------------------------------------------*/
+/* Sticy ------------------------------------------------------------*/
+
+.sticky {
+    background: rgba(33,33,33,.8) !important;
+}
+
+.sticky .logoProject { 
+    display: block;
+}
+
+.sticky .logoProject p  { 
+    color: rgba(255,255,255,1);
+    border: 1px solid #FFF;    
+
+}
+
+.sticky .topnav a {
+
+    color: rgba(255,255,255,1);    
+}
+
+.sticky .topnav a.highlight {
+    border:2px solid rgba(255,255,255,1);
+}
+
+
+/* ------------------------------------------------------------------*/
+/* Page Elements ----------------------------------------------------*/
+h1.titleHero, .nLogo {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0;
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+h1.titleHero {
+    display: none;
+}
+
+.nLogo {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    z-index: 104;
+    top: 25%;
+}
+
+    .nLogo * {
+        font-size: 22px;
+    }
+
+    .nLogo p {
+        font-size: 56px;
+        padding: 1% 0;
+        text-align: center;
+        border-radius: 0;
+        border: 1px solid #FFF;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        width: 30%;
+        max-width: 400px;
+        color: #FFF;
+        text-shadow: 0px 3px 5px rgba(0,0,0,0.45);
+        margin: 0 auto;
+        display: block;
+        background: rgba(255,255,255,0.3);
+    }
+
+#logo {
+    font-family: 'Open Sans', sans-serif;
+    color: #ED7127;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 75px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: rgba(155,155,155,0.6) 3px 2px 0;
+    position: relative;
+}
+
+.hero, .square01, .square02, .square03, .square04 {
+    position: relative;
+    width: 100%;
+}
+
+.square01, .square03 {
+    display: flex;
+}
+
+.hero, .square02, .square04 {
+    display: block;
+}
+
+.hero {
+    max-height: 1000px;
+    height: 100vh;
+    background: url(../images/backgroundMeuAcordo.jpg) center top no-repeat;
+}
+
+.square01, .square02, .square03, .square04 {
+    min-height: 500px;
+    padding: 5% 0 7%;
+}
+
+.square01 {
+    background: #FFFFFF;
+    margin: 0 0 0;
+}
+
+.square02 {
+    background: #fafafa;
+}
+
+.square03 {
+    background: #e23d4d;
+}
+
+.square03 * {
+    color: #FFF !important;
+}
+
+.square04 {
+    background: #FFFFFF;
+}
+
+.wrapSubtitleHero{
+    position: absolute;
+    display: inline-block;
+    height: 130px;    
+    width: 100%;
+    text-align: center;
+    top: 40%;
+    z-index: 105;   
+}
+
+.subtitleHero {
+    position: relative;
+    display: inline-block;
+    /* width: 60%; */
+    max-width: 600px;
+    text-align: center;
+    top: 40%;
+    font-size: 23px;
+    line-height: 1.7;
+    height: 90px;
+    font-weight: 300;
+    color: rgba(255, 255, 255,1) !important;
+    text-shadow: 1px 2px 2px rgba(55,55,55,.6);
+    z-index: 106;
+}
+
+.subtitle {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 15px 0 5px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.3;
+    color:#d89581;    
+}
+
+
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 28px;
+    font-size: 36px;
+    line-height: 1.45;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    color:#e23d4d ;
+    display: block;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 2px;
+    font-size: 21px;
+    line-height: 1;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    display: block;
+}
+
+.centerText {
+    text-align: center !important;
+}
+
+p.bodyText {
+    font-size: 16px;
+    font-weight: 300;
+    color: #777;
+    line-height: 1.7778;
+    display: block;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+p.bodyText * {
+    font-size: 16px;
+}
+
+.textLegal {
+    position: relative;
+    float: none;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.textLegal, .textLegal * {
+    font-size: 14px;
+}
+b {
+    color: #e23d4d;
+}
+
+.imagePortalMeuAcordo{
+    width: 296px;
+    height: 600px; 
+        margin: 0 auto;  
+}
+
+.wrapButtonsHero {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    bottom: 40px;
+    margin: 70px auto 0;    
+    padding: 0;
+    z-index: 200
+}
+
+.wrapButtonsContact {
+    position: relative;
+    width: 97%;
+    height: 60px;
+    bottom: 40px;
+    margin: 0px auto 0;    
+    padding: 0;
+}
+
+.partSquare20, .partSquare25, .partSquare30,  .partSquare40, .partSquare50, .partSquare60, .partSquare70, .partSquare75, .partSquare80, .partSquare100 {
+    min-height: 100px;
+    padding: 1% 3% 7%;
+    display: inline-block;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.partSquare30flex {
+    padding: 1% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    float: left;
+}
+
+.partSquare30flex .itemDescription {
+    height: 30%;
+}
+
+
+.partSquare50_flex {
+    min-height: 100px;
+    padding: 5% 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+    float: left;
+}
+
+
+.partSquare20 {
+    width: 20%;
+    display: flex;
+    float: left;
+}
+
+.partSquare25 {
+    width: 25%;
+}
+
+.partSquare30 {
+    width: 30%;
+}
+
+.partSquare30flex {
+    width: 33.3%;
+}
+
+
+
+.partSquare40 {
+    width: 40%;
+}
+
+.partSquare50 {
+    width: 45%;
+}
+
+.partSquare50_flex {
+    width: 50%;
+}
+
+.partSquare60 {
+    width: 60%;
+}
+
+.partSquare70 {
+    width: 70%;
+}
+
+.partSquare75 {
+    width: 75%;
+}
+
+.partSquare80 {
+    width: 80%;
+}
+
+.partSquare100 {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;    
+    display: block;    
+}
+
+
+
+.boxPhotoRight {
+    width: 50%;
+    padding: 5% 0 0;
+    float: right;
+}
+
+.boxPhotoLeft {
+    width: 50%;
+    padding: 5% 0 0;
+    float: left;
+}
+
+.backgroundPhoto01 {
+    background: url(../images/backgroundPhoto01.jpg) center center no-repeat;
+}
+
+.backgroundPhoto02 {
+    background: url(../images/backgroundPhoto02.jpg) center center no-repeat;
+}
+
+
+/* ------------------------------------------------------------------*/
+/* Video ------------------------------------------------------------*/
+.video-container{
+    position: relative;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    z-index: 50;
+    overflow: hidden;
+}
+
+.video-cover{
+    position: absolute;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    z-index: 51;
+    background: rgba(85,140,140,0.6);
+}
+
+
+video { 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: #ccc no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+
+}
+
+.itemTitle{
+    width: 70%;
+    text-align: center;
+    display: inline-block;
+}
+
+.itemTitle span{
+    font-size: 21px;
+    font-weight: bold;
+    margin: 1%;
+    text-transform: uppercase;
+}
+
+.itemTitle span:first-child{
+    color: #212121;
+}
+
+.itemTitle span:last-child{
+    color: #e23d4d;
+}
+
+.itemDesc {
+    position: relative;
+    float: left;
+    max-width: 215px;
+    width: 70%;    
+    margin: 3px;
+    text-align: center; 
+    line-height: 1.7;
+    font-family: 'Roboto', sans-serif;    
+    font-size: 14px;
+    color:#696969;
+}
+
+.itemIcon {
+    width: 60px;
+    height: 60px;
+    margin: 6% 5%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.itemIcon.left {
+    float: left;
+}
+
+.itemIcon.right {
+    float: right;
+}
+
+
+
+
+/* ------------------------------------------------------------------*/
+/* IcoElement -------------------------------------------------------*/
+.wrapIcoElement {
+    display: flex;
+    margin: 50px 0 10px;
+}
+
+.icoElement {
+    background: #FFFFFF;
+    width: 24%;
+    margin: 0 1%;
+    height: 100px;
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 21px;
+    padding: 10px 0;
+}
+
+.icon {
+    color: #81d8d0;
+    width: 100%;
+    margin: 10px;
+    padding: 10px 0;
+}
+
+.iconBig {
+    color: #d89581;
+    font-size: 62px !important;
+    align-self: flex-start;
+}
+
+/* ---------------------------------------------------------------------*/
+/* BoxElement ----------------------------------------------------------*/
+.wrapBoxElement {
+    display: flex;
+}
+
+.boxElement {
+    background: #FFF;
+    width: 24%;
+    margin: 0 .5% 1%;
+    height: 250px;
+    border: 0;
+    position: relative;
+    flex-grow: 1;
+}
+
+.textBoxElement {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color:#e23d4d;
+}
+
+    .textBoxElement span {
+        font-weight: 200;
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.7778;
+    }
+
+
+.boxElement .icon {
+    font-size: 62px !important;
+    margin: 14px 0;
+}
+
+/* ------------------------------------------------------------------*/
+/* Contact ----------------------------------------------------------*/
+.wrapForm {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    align-content: flex-start;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="url"],
+form input[type="search"],
+form input[type="tel"],
+form input[type="password"],
+form input[type="phone"],
+form input[type="date"],
+form input[type="color"],
+form select {
+    background-color: #fff;
+    background-image: none;
+    width: 100%;
+    height: 46px;
+    margin: 5px 0;
+    padding: 10px 16px;
+    font-size: 16px;
+    line-height: 1.33;
+    border-radius: 6px;
+    display: inline-block;
+    height: 42px;
+    vertical-align: middle;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #999;
+    border: 1px solid rgba(0,0,0, .1);
+    padding: 7px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+textarea {
+    color: #999;
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0, .1);
+    border-radius: 6px;
+    padding: 7px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.33;
+    font-size: 16px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -moz-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -o-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+.wrapContactElement {
+    display: flex;
+}
+
+.contactElement {
+    background: #FFFFFF;
+    width: 24%;
+    margin: 0 1%;
+    height: 200px;
+    border: 0;
+    position: relative;
+    flex-grow: 1;
+}
+
+.textContactElement, .textContactElement a {
+    font-size: 14px;
+    text-align: center;
+}
+
+    .textContactElement span {
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+.iconContact {
+    width: 100%;
+}
+
+.messageSucess {
+    position: relative;
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    color: #156cc8;
+    margin: -45px 0 2px;
+    display: none;
+}
+
+.fa {
+    color: #fff;
+    background: #e23d4d;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    width: 64px;
+    height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 37px !important;
+    margin: 5px 0 0;
+    padding: 13px 0 15px;
+    margin: 20px auto;
+    display: block !important;
+}
+
+.icon {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 37px !important;
+    margin: 5px 0 0;
+}
+
+.barBottom {
+    display: block !important;
+    background: #333;
+    color: #FFF;
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+}
+
+/* ------------------------------------------------------------------*/
+/* Auto-Scroll ------------------------------------------------------*/
+.scrollToTop {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    display: none;
+
+    border-radius: 0;
+    opacity: 0.5;
+    z-index: 10000;
+    cursor: pointer;
+}
+
+    .scrollToTop:hover {
+        text-decoration: none;
+    }
+
+/* ------------------------------------------------------------------*/
+/* Animate ------------------------------------------------------*/
+.animateLeftIn                  {display: none; transition: all 2s; }
+.animateLeftIn.triggeredCSS3    {display: block; }
+
+
+/* ------------------------------------------------------------------------*/
+/* BigScreens -----------------------------------------*/
+@media (min-width: 1800px) {
+    .nLogo {
+        top: 25%;
+    }
+}
+
+/* -------------------------------------------------------------------*/
+/* Adjusts 890 resolution --------------------------------------------*/
+@media (max-width: 890px) {
+    .contentHeader {
+        margin: 0;
+        background: rgba(226, 61, 77,.98) !important;
+    }
+
+    .logoProject * {
+        font-size: 16px;
+    }
+
+    .logoProject p {
+        margin: 5px 0 0;
+    }
+
+    .nLogo {
+        margin: 0 auto;
+        display: table;
+        width: 100%;
+    }
+
+        .nLogo p {
+            width: 65%;
+        }
+
+    .topnav {
+            position: absolute;
+        right: 0;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .topnav li:not(:first-child) {
+        display: none;
+        float: left;
+    }
+
+    .topnav li:nth-child(2) {
+        margin: 48px 0 0  !important;
+        border-top: 1px solid #FFF;
+    }
+
+    .topnav li.icon {
+        float: right;
+        display: block;
+        width: 35px;
+        height: 35px;
+        color: #FFF;
+        margin: -20px 0 17px;
+        padding: 15px 8px 0;
+        transition: none;
+    }
+
+        .topnav li.icon a {
+            font-size: 30px !important;
+            font-weight: bold;
+            text-decoration: none !important;
+        }
+
+    .topnav.responsive {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        
+    }
+
+        .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            float: right;
+            width: 35px;
+            height: 35px;
+            font-size: 30px !important;
+            font-weight: bold;
+            background: transparent !important;
+        }
+
+            .topnav.responsive .icon a {
+                font-size: 30px !important;
+                font-weight: bold;
+            }
+
+        .topnav.responsive li {
+            float: left;
+            display: block !important;
+            text-align: left;
+            margin: 0;
+            width: 100%;
+            height: 32px;
+            background: rgba(226, 61, 77,.98) !important;
+            padding: 7px 2% 0;
+        }
+
+        .topnav li a.highlight {
+            border: 0 !important;
+        }        
+
+    .wrapBoxElement {
+        display: inline-block;
+    }
+
+    .boxElement {
+        display: inline-block;        
+        width: 90%;
+        border: 1px solid #eee;
+        margin: 2% 5%;
+        box-shadow: 3px 3px 3px rgba(33,33,33,0.1);
+    }        
+
+    .partSquare40 {
+        display: none;
+    }
+
+    .partSquare60, .partSquare50_flex, .partSquare30flex {
+        width: 100%;
+    }
+
+    .partSquare30flex {
+        max-height: 330px;
+    }    
+
+    .partSquare30flex .itemDescription {
+        height: 100%;
+        max-height: 110px;
+    }
+
+    .partSquare30flexToHide {
+        display: none !important;
+    }
+
+    .itemDescription {
+        float: left;
+    }        
+
+    .itemDescription * {
+        text-align: left;
+    }    
+
+    .itemDesc {
+        max-width: 100% !important;
+    }
+     
+    .itemIcon {
+        text-align: center;
+        float: right;
+        margin: 0 6% 5%;
+    }    
+
+    .itemIcon * {
+        font-size: 55px !important;
+    }        
+
+    .logoProject {
+        display: table;
+        margin: 5px 2% 0;
+        max-width: 205px;
+    }
+
+    .topnav li {
+        font-size: 13px;
+        margin: 0 3px 0;
+    }
+
+    .iconBig {
+        font-size: 42px !important;
+    }
+}
+
+
+/* ------------------------------------------------------------------------*/
+/* Adjusts iPad and other tablets -----------------------------------------*/
+@media (max-width: 768px) {
+    .partSquare100 {
+        width: 100%;
+    }
+
+    .backgroundPhoto02 {
+        display: none;
+    }
+
+    .wrapForm {
+        display: block;
+    }
+
+        .wrapForm .partSquare50 {
+            width: 100%;
+        }
+}
+
+/* -----------------------------------------------------------------------*/
+/* Adjusts SmartPhones ---------------------------------------------------*/
+@media (max-width: 600px) {
+    .subtitleHero {
+        height: auto;
+    }
+
+    .topnav {
+        width: 34%;
+    }
+
+    .wrapButtonsHero {
+        width:100%;
+    }
+
+    .partSquare70 {
+        width: 100%;
+    }
+
+    #logo {
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+
+    .bodyText{
+        width: 80%;    
+        line-height: 1.5778 !important;
+    }
+
+    h1.titleHero {
+        margin: 0;
+    }
+
+    .logoProject * {
+        font-size: 16px;
+    }
+
+    .logoProject p {
+        margin: 5px 0 0;
+    }
+
+    h1.titleHero, .nLogo p {
+        font-size: 42px;
+    }
+
+    .wrapSubtitleHero {
+        width: 100%;
+        text-align: center;
+        top: 40%;
+        z-index: 105;
+        margin: 0;
+    }    
+
+    .subtitleHero{
+        width: 80%;
+        margin: 15px auto 0;                
+    }
+
+    h2 {
+        margin-bottom: 14px;
+        font-size: 32px;
+        line-height: 1.45;
+        letter-spacing: -1px;
+        width: 100%;
+        display: block;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .wrapIcoElement {
+        display: block;
+    }
+
+    .icoElement {
+        width: 45%;
+        float: left;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .wrapBoxElement {
+        display: block;
+    }
+
+
+    .fa {
+        font-size: 24px !important;
+        width: 48px;
+        height: 20px;
+    }
+
+    .logoProject {
+        width: 90%;
+        margin: 6px 2% 0;
+        text-align: center;
+    }
+
+    .iconBig {
+        font-size: 30px !important;
+    }
+
+    .wrapContactElement {
+        display: block;
+    }
+
+    .contactElement {
+        width: 90%;
+        border: 1px solid #eee;
+        margin: 2% 5%;
+        box-shadow: 3px 3px 3px rgba(33,33,33,0.1);
+        height: 150px;
+    }
+
+        .contactElement:last-child {
+            margin: 2% 5% 60px;
+        }
+
+        .itemDescription, .itemTitle, .itemDesc {
+            width: 100%;
+        }        
+
+        .itemIcon {
+            display: none;
+        }
+
+        .textLegal, .textLegal * {
+            font-size: 12px;
+            margin: -20px 0 15px;
+        }        
+}

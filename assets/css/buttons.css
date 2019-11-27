@@ -1,0 +1,92 @@
+.simpleButton {
+    padding: 13px 45px 12px;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    width: 210px;
+    margin: 10px 5px 0;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 3px 2px 2px rgba(33,33,33,0.3);
+    border: 1px solid rgba(255,255,255,1);
+}
+
+    .simpleButton:hover {
+        background: rgba(255,255,255,0.9);
+    }
+
+@media (max-width: 480px) {
+    .simpleButton {
+        padding: 13px 10% 12px;
+        position: relative;
+        display: table;
+        width: 70%;
+        margin: 10px auto 0;
+    }
+}
+
+.buttonSendContact {
+    color: #FFF;
+    background: #d89581;
+    margin: 0 auto;
+    display: table;
+    border: 0;
+}
+
+    .buttonSendContact:hover {
+        background: rgba(19, 53, 90,.8) !important;
+    }
+
+
+.buttonKnowMore {
+    transition: all .6s;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 10px auto 0;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+  
+    box-shadow: 3px 2px 2px rgba(33,33,33,0.3);
+    border: 1px solid rgba(255,255,255,1);    
+    color: rgba(19, 53, 90,.8) !important;
+    background: rgba(255,255,255,.1) !important;
+    overflow: hidden;
+}
+
+
+.buttonKnowMore i {
+    font-size: 16px;
+    color: #fff;
+    margin: 2px 0 0;
+}
+
+    .buttonKnowMore:hover {
+        color: rgba(19, 53, 90,.8) !important;
+        background: rgba(255,255,255,.8) !important;
+    }
+
+.buttonKnowMore:hover i {
+    font-size: 16px;
+    color: #e23d4d;
+    margin: 2px 0 0;
+}    
+
+
+.buttonContact {
+    margin: 0 auto;
+    display: block;
+    color: #FFF;
+    background: #e23d4d;
+    margin: 30px auto -8px;
+}
+
+.buttonContact:hover {
+    background: #e23d4d;    
+}
