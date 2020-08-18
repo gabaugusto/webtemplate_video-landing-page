@@ -1,8 +1,8 @@
 # Video Landing Page
 
-En: Mostly used for exercises in classrooms.
+Mostly used for exercises in classrooms.
 
-Pt: Geralmente usada para exercícios em sala de aula.
+Geralmente usada para exercícios em sala de aula.
 
 ## Getting Started
 
