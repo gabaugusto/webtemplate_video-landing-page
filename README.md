@@ -13,7 +13,7 @@ Geralmente usada para exercícios em sala de aula.
 ## Começando. 
 
 1. Baixe todos os arquivos.
-2. Alterer o arquivo send.php com as configurações do seu e-mail.
+2. Altere o arquivo send.php com as configurações do seu e-mail.
 3. Publique a página.
 
 ## License
