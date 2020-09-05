@@ -38,42 +38,42 @@ $mail->SMTPDebug = 0;
 $mail->Debugoutput = 'html';
 
 //Set the hostname of the mail server
-$mail->Host = 'email-ssl.com.br';
+$mail->Host = '[YOUR_HOST]';
 // use
 // $mail->Host = gethostbyname('smtp.gmail.com');
 // if your network does not support SMTP over IPv6
 
 //Set the SMTP port number - 587 for authenticated TLS, a.k.a. RFC4409 SMTP submission
-$mail->Port = 587;
+$mail->Port = 587; //or 467 
 
 //Set the encryption system to use - ssl (deprecated) or tls
-$mail->SMTPSecure = 'tls';
+$mail->SMTPSecure = 'tls'; //or ssl 
 
 //Whether to use SMTP authentication
 $mail->SMTPAuth = true;
 
 //Username to use for SMTP authentication - use full email address for gmail
-$mail->Username = "meuacordo@meuacordo.com.br";
+$mail->Username = "[YOUR_USERNAME]";
 
 //Password to use for SMTP authentication
-$mail->Password = "Em34056688@";
+$mail->Password = "[YOUR_PASSWORD]";
 
 //Set who the message is to be sent from
-$mail->setFrom('meuacordo@meuacordo.com.br', 'MeuAcordo.com.br');
+$mail->setFrom('[YOUR_USERNAME]', '[YOUR_NAME]');
 
 //Set an alternative reply-to address
-$mail->addReplyTo('meuacordo@meuacordo.com.br', 'MeuAcordo.com.br');
+$mail->addReplyTo('[YOUR_ANOTHER_MAIL]', '[YOUR_NAME]');
 
 //Set who the message is to be sent to
-$mail->addAddress('vendas@redeservice.com.br', 'Vendas - Redeservice');
-$mail->AddCC('meuacordo@meuacordo.com.br', 'MeuAcordo.com.br');
+$mail->addAddress('[TO_EMAIL]', '[TO_NAME]');
+$mail->AddCC('[TO_EMAIL_CC]', '[TO_NAME_CC]');
 
 $mail->Name = $email;
 $mail->From = $email;
 $mail->Body = $message;
 
 //Set the subject line
-$mail->Subject = 'Contato vindo do site MeuAcordo.com.br';
+$mail->Subject = '[SUBJECT]';
 
 //Read an HTML message body from an external file, convert referenced images to embedded,
 //convert HTML into a basic plain-text alternative body
