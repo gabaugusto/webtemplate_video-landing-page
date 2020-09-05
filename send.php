@@ -11,14 +11,13 @@ $email = $_REQUEST['email'] ;
 $message = $_REQUEST['msg'] ;
 
 $messageComplete =  '===============<br/>';
-$messageComplete .= 'Esta mensagem foi enviada pelo site MeuAcordo.com.br<br/>';
+$messageComplete .= 'This message was sent from MySite.com<br/>';
 $messageComplete .= '===============<br/><br/>';
-$messageComplete .= 'E-mail enviado por: ';
-$messageComplete .= $name . ' <br/><br/>E-mail: ' . $email . '<br/><br/>Telefone: '. $phone .'<br/><br/>Mensagem: '. $message. '<br/><br/>';
+$messageComplete .= 'E-mail send by: ';
+$messageComplete .= $name . ' <br/><br/>E-mail: ' . $email . '<br/><br/>Phone: '. $phone .'<br/><br/>Message: '. $message. '<br/><br/>';
 $messageComplete .= "===============<br/>";
-$messageComplete .= "Fim da mensagem<br/>";
+$messageComplete .= "End of the message<br/>";
 $messageComplete .= "===============<br/><br/><br/>";
-$messageComplete .= "<a href='http://www.MeuAcordo.com.br'>MeuAcordo.com.br</a>.";
 
 require './phpmailer/PHPMailerAutoload.php';
 
