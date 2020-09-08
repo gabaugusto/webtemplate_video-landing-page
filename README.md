@@ -1,6 +1,12 @@
 # Video Landing Page
 
+This template is a template to understand HTML and CSS basics.
+
 Mostly used for exercises in classrooms.
+
+# Video Landing Page (Português)
+
+Esse é um template criado para exemplificar algumas bases do HTML e do CSS. 
 
 Geralmente usada para exercícios em sala de aula.
 
