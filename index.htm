@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-    <title>Example.com</title>
+    <title>Sample.com - buzzyo.xyz</title>
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="description" content="A Ferramenta de negociação mais eficiente do mercado. " />
@@ -22,6 +22,16 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto|Oswald" rel="stylesheet">
 	<script type="text/javascript" src="assets/js/jquery.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-107499960-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-107499960-3');
+</script>
+
 </head>
 <body>
     <div class="contentHeader">
@@ -243,15 +253,20 @@
 
             <div class="barBottom">&copy; Sample.com.br - 2017</a></div>
         </div>
+
+        <div class="cookies-snackbar">
+            <div class="content">
+                <p>We use cookies and similar technologies to improve your experience on our services, for commercial
+                    purporses and advertising. By continuing to browse,
+                    you agree to these conditions.</p>
+                <button id="proceedButton" onclick="saveCookie()">
+                    <span>Proceed</span>
+                </button>
+            </div>
+        </div>
     </div>
     <script type="text/javascript" async src="assets/js/functions.js"></script>
     <script type="text/javascript" async src="assets/js/inViewport.js"></script>
-
-    <script type="text/javascript" >
-
-        new WOW().init();
-
-    </script>
 
 </body>
 </html>

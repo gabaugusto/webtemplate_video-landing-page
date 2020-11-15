@@ -1173,3 +1173,54 @@ textarea {
             margin: -20px 0 15px;
         }        
 }
+
+/* ------------------------------------------------------------------*/
+/* Cookies Snackbar -------------------------------------------------*/
+
+.cookies-snackbar {
+    position: fixed;
+    left: calc(50% - 16px);
+    transform: translateX(-50%);
+    bottom: 16px;
+    z-index: 11500;
+    width: calc(100% - 32px);
+    max-width: 1120px;
+    margin: 0px 16px;
+    display: none;
+}
+
+.cookies-snackbar .content {
+    background-color: #fff;
+    border: 1px solid #eee;
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,0.1) 1px 1px 4px;
+    border-radius: 4px;
+    padding: 16px 24px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1120px;
+    width: 100%;
+}
+
+.cookies-snackbar .content p {
+    font-size: 12px;
+    color: #4a4a4a;
+    font-weight: 400;
+}
+
+.cookies-snackbar .content button {
+    border: 0;
+    font-size: 14px;
+    height: 32px;
+    min-height: 32px;
+    min-width: 96px;
+    padding: 0 16px;
+    color: #fff;
+    background-color: #13335f;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 24px;
+    font-weight: normal;
+}
