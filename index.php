@@ -4,7 +4,7 @@
     <title>Sample.com - buzzyo.xyz</title>
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="description" content="A Ferramenta de negociação mais eficiente do mercado. " />
+    <meta http-equiv="description" content="The sample Page " />
     <meta http-equiv="keywords" content="excelência tecnica, acordo de dividas, experiência em negociacao, alta qualidade negociaco, negociao de baixo custo, discadores, cobranca em massa, cobranca, devedores em massa, produtos e servicos telecom" />
     <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 
